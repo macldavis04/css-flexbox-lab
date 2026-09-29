@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica;
+  background: #0d5c5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 180px;
+  background: white;
+  display: grid;
+  grid-template-rows: auto auto auto 40px;
+  text-align: center;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 10px 10px;
+}
+
+.online {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 7px;
+  color: #999;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #5fb388;
+  background: #ccc;
+}
+
+.header h2 {
+  font-size: 15px;
+  margin: 12px 0 0;
+}
+
+.rating,
+.pricing {
+  padding: 10px;
+  font-size: 11px;
+}
+
+.rating {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.rating p,
+.pricing p {
+  margin: 3px 0;
+}
+
+.stars {
+  height: 12px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.call {
+  background: #6cc48f;
+}
+
+.chat {
+  background: #5fb388;
+}
